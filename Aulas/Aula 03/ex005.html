@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testes com o DOM</title>
+    <style>
+        body {
+            background-color: grey;
+            color: white;
+            font: normal 19pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">
+        Iniciando o DOM
+    </h1>
+    <p>
+        Aprendendo
+    </p>
+    <p>
+        Testando, testando...
+    </p>
+    <div id="clicar">Clique e teste</div>
+
+    <script>
+        var ex1 = window.document.getElementsByTagName('p')[1]
+        var corpo = document.body
+        window.document.write('Olá, mundo! ' + ex1.innerText)
+        var id = window.document.querySelector('div#clicar')
+        var tit = window.document.querySelector('h1.titulo')
+        corpo.style.color = 'black'
+        id.style.color = 'pink'
+        tit.style.color = 'white'
+        </script>
+</body>
+</html>
