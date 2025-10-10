@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recriação do ex009</title>
+</head>
+<body>
+    <h1>
+        Mediador de Alma
+    </h1>
+    Sua quantidade de alma:
+    <input type="number" name="alma" id="almo"> %
+    <input type="button" value="Medir" onclick="testar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function testar() {
+            var soul = document.querySelector('input#almo')
+            var res = document.querySelector('div#res')
+            var alma = Number(soul.value)
+
+            res.innerHTML = `Sua alma é de ${alma}, `
+
+            if (alma > 33) {
+                res.innerHTML += `Você tem <strong>ALMA</strong> o suficiente para atacar!`
+            } else if (alma < 33) {
+                res.innerHTML += `Você não tem <strong>ALMA</strong> o suficiente, não pode atacar!`
+            }
+      }
+
+    </script>
+</body>
+</html>
