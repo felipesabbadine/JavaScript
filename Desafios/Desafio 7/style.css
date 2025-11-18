@@ -1,0 +1,49 @@
+/*          <label for="idade">Insira sua idade:</label>
+            <input type="date" name="idade" id="idadetxt">
+            <br>
+            <label for="email">Insira sua idade:</label>
+            <input type="email" name="email" id="mailtxt">*/
+
+@font-face {
+    font-family: 'pixel-osd';
+    src: url(vcr_osd_mono/VCR_OSD_MONO_1.001.ttf);
+}
+
+
+body {
+    font-family: 'pixel-osd';
+    background-color: rgb(0, 0, 0);
+}
+
+main {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid white;
+    padding: 15px;
+    margin: auto;
+    width: 50vw;
+    border-radius: 10px;
+}
+
+section {
+    padding: 5px;
+}
+
+section > input {
+    padding: 5px;
+    margin: 6px;
+}
+
+input[type=text] {
+    font-family: 'pixel-osd';
+    border: 0px 0px px 0px;
+    background-color: black;
+    color: white;
+}
+
+input[type=button] {
+    font-family: 'pixel-osd';
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
