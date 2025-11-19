@@ -13,12 +13,23 @@
         <section>
             
             <input type="text" name="nome" id="nometxt" autocomplete="off">
-            <br>
             
-            <input type="button" value="Enviar" onclick="marcar()">
+            
+            <input type="button" value="Enviar" id="sent1" onclick="marcar()">
             
         </section>
         <section id="resposta">
+
+        </section>
+
+        <section id="pergunta2">
+            <p>Outra pergunta, quantos anos você tem?</p>
+            <input type="number" name="idade" id="idadetxt">
+            
+            <input type="button" value="Enviar" id="sent2" onclick="enviar()">
+        </section>
+
+        <section id="resposta2">
 
         </section>
     </main>
