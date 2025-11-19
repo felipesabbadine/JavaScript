@@ -21,21 +21,16 @@ function marcar() {
 // Segunda mensagem
 
 function enviar() {
-    const mens2 = Object.create(lembrar)
-    mens2.idade = document.querySelector('section#idadetxt')
-    let mensa2 = mens2.value
-    const mensagem2 = Number(mensa2)
-    
+    var vlridade = document.getElementById('idadetxt')
+    var idade = vlridade.value
+    var ida = Number(idade)
     let resposta2 = document.querySelector('section#resposta2')
     
-    
-    if(mensagem2.idade <= 18) {
-        document.querySelector('section#resposta2').style.display = 'block'
-        resposta2.innerHTML = 'Nossa! você é tão novo, não esperava isso.'
-    } else if(mensagem2.idade >= 18 && mensagem2.idade <= 30) {
-        document.querySelector('section#resposta2').style.display = 'block'
-        resposta2.innerHTML = 'Eh, você tem quase a mesma idade que eu.'
-    } 
-    
-    let sent2 = document.getElementById('sent2').style.display = 'none'
+    if(idade <= 18) {
+        resposta2.innerHTML = 'Uau! Você é mais novo do que eu imaginei.'
+    } else if (idade > 18) {
+        resposta2.innerHTMl = 'Ah, você tem quase a mesma idade que eu.'
+    }
+
+    //let sent2 = document.getElementById('sent2').style.display = 'none'
 }
