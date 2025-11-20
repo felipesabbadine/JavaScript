@@ -27,6 +27,7 @@ main {
 
 section {
     padding: 5px;
+    margin: 5px;
 }
 
 section > input {
@@ -54,3 +55,4 @@ input[type=button] {
 section#resposta {
     padding: 5px;
 }
+
