@@ -1,5 +1,8 @@
 let per2 = document.getElementById('pergunta2').style.display = 'none'
-let per3 = document.getElementById('pergunta3').style.display = 'none'
+let per3 = document.getElementById
+('pergunta3').style.display = 'none'
+var confirmar = Confirma
+let per4 = document.getElementById('pergunta4').style.display = 'none'
     let lembrar = {
         nome: document.getElementById('nometxt'),
         idade: document.getElementById('idadetxt'),
@@ -32,14 +35,18 @@ function enviar() {
     let age = Number(ida)
     let resposta2 = document.querySelector('section#resposta2')
     
-    if(age <= 18) {
+    setTimeout(() => {
+        if(age <= 18) {
         resposta2.innerHTML = "Nossa! você e mais novo do que eu esperava."
     } else if(age > 18 && age <= 30) {
       resposta2.innerHTML = "Ah, você tem quase a mesma idade que eu."  
-    } 
-    let sent2 = document.getElementById('sent2').style.display = 'none'
-    document.querySelector('section#pergunta3').style.display = 'block'
+    }
+    }, 1500)
 
+    setTimeout(() => {
+        let sent2 = document.getElementById('sent2').style.display = 'none'
+        document.querySelector('section#pergunta3').style.display = 'block'
+    }, 2500)
 }
 
 // Confirmar a pergunta
@@ -47,9 +54,19 @@ function enviar() {
 function Confirma() {
     let sim = document.getElementById('sim').style.display = 'none'
     let nao = document.getElementById('nao').style.display = 'none'
-    let resposta3 = document.querySelector('section#resposta3')
 
-    resposta3.innerHTML = 'Qual seu maior medo?'
+    setTimeout(() => {
+        let resposta3 = document.querySelector('section#resposta3')
+    }, 1200)
+    
+    setTimeout(() => {
+        resposta3.innerHTML = 'Qual seu maior medo?'
+    }, 1000)
+
+    var confirm = true
+    if(confirm = true) {
+        let per4 = document.getElementById('pergunta4').style.display = 'block'
+    }
 }
 
 
@@ -60,5 +77,7 @@ function Recusa() {
     let nao = document.getElementById('nao').style.display = 'none'
     let resposta3 = document.querySelector('section#resposta3')
 
-    resposta3.innerHTML = 'Puts, então deixa pra lá.'
+    setTimeout(() => {
+        resposta3.innerHTML = 'Puts, então deixa pra lá.'
+    }, 1100)
 }
