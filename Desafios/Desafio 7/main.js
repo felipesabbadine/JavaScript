@@ -1,11 +1,11 @@
 let per2 = document.getElementById('pergunta2').style.display = 'none'
 let per3 = document.getElementById
 ('pergunta3').style.display = 'none'
-var confirmar = Confirma
+var confirmar = true
 let per4 = document.getElementById('pergunta4').style.display = 'none'
     let lembrar = {
-        nome: document.getElementById('nometxt'),
-        idade: document.getElementById('idadetxt'),
+        nome: document.getElementById('nometxt').value,
+        idade: document.getElementById('idadetxt').value,
     }
 
 // Primeira mensagem
@@ -52,21 +52,22 @@ function enviar() {
 // Confirmar a pergunta
 
 function Confirma() {
-    let sim = document.getElementById('sim').style.display = 'none'
+    let sim = document.getElementById('sim').style.display = 'block'
     let nao = document.getElementById('nao').style.display = 'none'
+    var confirm = true
+    let resposta3 = document.querySelector('section#resposta3')
+    const medo = document.getElementById('medo')
+    let per4 = document.getElementById('pergunta4').style.display = 'block'
 
-    setTimeout(() => {
-        let resposta3 = document.querySelector('section#resposta3')
-    }, 1200)
-    
     setTimeout(() => {
         resposta3.innerHTML = 'Qual seu maior medo?'
-    }, 1000)
-
-    var confirm = true
-    if(confirm = true) {
-        let per4 = document.getElementById('pergunta4').style.display = 'block'
-    }
+    }, 1800)
+    
+    medo.addEventListener("click", () => {
+        let resposta4 = document.querySelector('section#resposta4')
+        let fear = document.getElementById('medotxt').value
+        resposta4.innerHTML = `Hmm, medo de ${fear}, que bom que eu posso conhecer isso ${lembrar.nome}`
+    })
 }
 
 
@@ -74,10 +75,14 @@ function Confirma() {
 
 function Recusa() {
     let sim = document.getElementById('sim').style.display = 'none'
-    let nao = document.getElementById('nao').style.display = 'none'
+    let nao = document.getElementById('nao').style.display = 'block'
     let resposta3 = document.querySelector('section#resposta3')
+    var confirm = false
 
     setTimeout(() => {
         resposta3.innerHTML = 'Puts, então deixa pra lá.'
     }, 1100)
 }
+
+// Definir medo
+
