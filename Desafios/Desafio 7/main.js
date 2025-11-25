@@ -57,17 +57,25 @@ function Confirma() {
     var confirm = true
     let resposta3 = document.querySelector('section#resposta3')
     const medo = document.getElementById('medo')
-    let per4 = document.getElementById('pergunta4').style.display = 'block'
 
     setTimeout(() => {
         resposta3.innerHTML = 'Qual seu maior medo?'
     }, 1800)
-    
-    medo.addEventListener("click", () => {
+
+    setTimeout(() => {
+        let per4 = document.getElementById('pergunta4').style.display = 'block'
+    }, 1900)
+
+    setTimeout(() => {
+        medo.addEventListener("click", () => {
+        medo.style.display = 'none'
         let resposta4 = document.querySelector('section#resposta4')
         let fear = document.getElementById('medotxt').value
         resposta4.innerHTML = `Hmm, medo de ${fear}, que bom que eu posso conhecer isso ${lembrar.nome}`
     })
+    }, 2000)
+
+    
 }
 
 

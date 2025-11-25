@@ -39,13 +39,26 @@ section > input {
 }
 
 input[type=text] {
+    font-size: 1.1em;
     font-family: 'pixel-osd';
     border: 0px 0px px 0px;
     background-color: black;
     color: white;
 }
 
+input[type=number] {
+    font-size: 1.1em;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 input[type=button] {
+    
     font-family: 'pixel-osd';
     border: 2px solid white;
     background-color: black;
