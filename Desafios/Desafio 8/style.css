@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+main {
+    
+    width: 65vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input {
+    margin: 10px;
+}

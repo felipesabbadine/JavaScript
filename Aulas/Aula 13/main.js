@@ -1,4 +1,6 @@
-let texto = "www.Alule.Com"
-let n =  texto.search(/Alule/)
+let text = "Give 100%!";
+const pattern = /\s/g;
 
-console.log(`${n}`)
+let result = text.match(pattern);
+
+console.log(`${result}`)
