@@ -1,6 +1,7 @@
-let text = "Give 100%!";
-const pattern = /\s/g;
 
-let result = text.match(pattern);
+/*const regex = /Jose|Alberto|Rodolfo/i
 
-console.log(`${result}`)
+const texto = "Cade o Alberto e o Jose"
+
+console.log(regex.test(texto))*/
+
