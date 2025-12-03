@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/*
+005E7C
+0094C6
+005E7C
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #0094C6;
+    padding: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: #005E7C;
+    padding: 20px;
+}
+
