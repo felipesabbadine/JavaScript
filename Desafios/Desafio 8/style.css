@@ -10,15 +10,19 @@ body {
 }
 
 main {
-    
     width: 65vw;
     background-color: white;
     margin: auto;
     margin-top: 20px;
     padding: 15px;
     border-radius: 10px;
+    border: 2px solid blue;
 }
 
 input {
+    border: 1px solid rgb(0, 162, 255);
+    color: rgb(89, 0, 255);
     margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
 }
