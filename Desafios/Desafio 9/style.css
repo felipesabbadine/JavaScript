@@ -12,13 +12,41 @@
 }
 
 header {
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.555);
     background-color: #0094C6;
     padding: 30px;
+    margin-bottom: 20px;
     text-align: center;
+    font-size: 2.5em;
 }
 
 footer {
     background-color: #005E7C;
     padding: 20px;
+    margin-top: 15px;
+}
+
+section {
+    margin: 10px;
+}
+
+div {
+    text-align: justify;
+    padding: 10px;
+    background-color: rgb(231, 253, 246);
+    width: 60vw;
+    margin: auto;
+    border: 1px solid #005E7C;
+    border-radius: 5px;
+}
+
+div > p {
+    padding: 5px;
+}
+
+div > h2 {
+    color: #005E7C;
+    text-align: center;
 }
 
