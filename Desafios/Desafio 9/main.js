@@ -1,17 +1,20 @@
-/*document.querySelector('div.text').addEventListener('mouseover', function() {
-    this.style.backgroundColor = '#ffffff'
 
-    let Divs = document.querySelectorAll('.text')
 
-    Divs.style.backgroundColor = '#ffffff'
-})*/
+var h = document.getElementsByTagName("h2") 
 
-var Divs = document.querySelectorAll('.text')
+document.querySelectorAll(".text").forEach((T) => {
+    T.addEventListener("mouseover", () => {
+        
+        T.style.backgroundColor = '#6CE0E0'
+        T.style.transform = "scale(1.1)"
+        T.style.transition = "0.7s"
+    })
+})
 
-function hover() {
-    window.alert('oi')
-}
-
-function outhover() {
-    window.alert('tchau')
-}
+document.querySelectorAll(".text").forEach((t) => {
+    t.addEventListener("mouseout", () => {
+        t.style.backgroundColor = "#e7fdf6"
+        t.style.transform = "scale(1)"
+        t.style.transition = "0.7s"
+    })
+})

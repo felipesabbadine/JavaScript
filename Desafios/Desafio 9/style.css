@@ -11,6 +11,8 @@
     padding: 0px;
 }
 
+
+
 header {
     color: white;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.555);
@@ -34,7 +36,7 @@ section {
 div {
     text-align: justify;
     padding: 10px;
-    background-color: rgb(231, 253, 246);
+    background-color: #e7fdf6;
     width: 60vw;
     margin: auto;
     border: 1px solid #005E7C;
