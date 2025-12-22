@@ -20,6 +20,7 @@ span {
     background-color: black;
     width: 95vw;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 menu {
@@ -28,6 +29,7 @@ menu {
     padding: 10px;
     border-radius: 10px;
     display: none;
+    
 }
 
 a {
