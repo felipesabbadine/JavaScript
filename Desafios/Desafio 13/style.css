@@ -23,3 +23,16 @@ main {
     background-color: beige;
     border-radius: 10px;
 }
+div {
+    margin: auto;
+    
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+div.hover:hover {
+    transition: 0.5s;
+    transform: scale(1.1)
+    
+}
