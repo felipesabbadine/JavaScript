@@ -27,7 +27,7 @@ menu {
     padding: 15px;
     padding-top: 60px;
     height: 100vw;
-    width: 10vw;
+    width: 50px;
     top: 0;
     left: 0;
     overflow-x: hidden;
@@ -35,17 +35,34 @@ menu {
 }
 
 a {
+    text-align: center;
     color: white;
     text-decoration: none;
+    padding: 5px;
     margin: 20px;
-    padding-bottom: 15px;
-    display: block;
+    padding-bottom: 25px;
+    display: none;
+}
+
+a:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+
+i.icons {
+    font-size: 1.5em;
+    padding: 10px;
 }
 
 i {
     color: white;
 }
 
-i#arrowc {
+span#arrowo {
+    font-size: 1.5em;
+}
+
+span#arrowc {
+    font-size: 1.5em;
     display: none;
 }

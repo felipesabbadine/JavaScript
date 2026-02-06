@@ -1,16 +1,21 @@
-
-
-
+const links = document.querySelectorAll(".links")
+const side = document.getElementById("sidebar")
+const closea = document.getElementById("arrowc")
+const opena = document.getElementById("arrowo")
 function abrirnav() {
-    
- document.getElementById("sidebar").style.width = "250px"
- document.getElementById("arrowo").style.display = "none"
- document.getElementById("arrowc").style.display = "block"
+ side.style.width = "250px"
+ opena.style.display = "none"
+ closea.style.display = "block"
+ links.forEach(link => {
+    link.style.display = "block"
+ })
 }
 
 function fecharnav() {
-    document.getElementById("sidebar").style.display = "20vw"
-    document.getElementById("arrowo").style.display = "block"
-    document.getElementById("arrowc").style.display = "none"
-
+    links.forEach(link => {
+        link.style.display = "none"
+    })
+    side.style.width = "50px"
+    closea.style.display = "none"
+    opena.style.display = "block"
 }
